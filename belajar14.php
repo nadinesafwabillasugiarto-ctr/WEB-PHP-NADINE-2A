@@ -1,5 +1,5 @@
 <?php
-$nilai = 88;
+$nilai = 95;
  
 if ($nilai > 90) {
     $predikat = "A+";
