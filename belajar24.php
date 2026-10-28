@@ -38,4 +38,14 @@ function hitungUmur($thn_lahir, $thn_sekarang){
   }
    
 echo "Umur saya adalah ". hitungUmur(2007, 2026) ." tahun";
+
+// FUNGSI YANG MEMANGGIL FUNGSI LAIN
+//memanggil function salam
+salam();
+ 
+$siswa="Inez";
+$dari="kediri";
+ 
+//memanggil function kenalan
+kenalan($siswa,$dari);
 ?>
