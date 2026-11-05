@@ -41,7 +41,7 @@ $data=mysqli_query($conn,$query);
         <select name="id_pengurus">
 <?php
 //menampilkan dropdown data pengurus
-$query_pengurus="SELECT * FROM tb_pengurus";
+$query_pengurus="SELECT * FROM pengurus";
 $data_pengurus=mysqli_query($conn,$query_pengurus);
  while($row_pengurus=mysqli_fetch_assoc($data_pengurus)) {
 ?>
