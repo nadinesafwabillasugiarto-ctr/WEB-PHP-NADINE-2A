@@ -27,8 +27,10 @@ $data=mysqli_query($conn,$query);
         <tr>
             <td><?php echo $row['id_gambar']; ?></td>
             <td><?php echo $row['id_pengurus']; ?></td>
-            <td><?php echo $row['gambar']; ?></td>
-            <td>Hapus</td>
+            <td><img src="foto/<?php echo $row['gambar']; ?>" width="50px" height="50px"></td>
+            <td>
+                <a href="hapus_foto.php?id_gambar=<?php echo $row['id_gambar']; ?>">Hapus</a>
+            </td>
         </tr>
 <?php
  }
