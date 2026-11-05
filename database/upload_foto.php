@@ -34,5 +34,31 @@ $data=mysqli_query($conn,$query);
  }
 ?>
     </table>
+    <hr>
+<h1>Form Upload</h1>
+<form method="post" action="proses_upload.php" enctype="multipart/form-data">
+    <p>Nama 
+        <select name="id_pengurus">
+<?php
+//menampilkan dropdown data pengurus
+$query_pengurus="SELECT * FROM tb_pengurus";
+$data_pengurus=mysqli_query($conn,$query_pengurus);
+ while($row_pengurus=mysqli_fetch_assoc($data_pengurus)) {
+?>
+            <option value="<?php echo $row_pengurus['id_pengurus'];?>">
+                <?php echo $row_pengurus['nama']; ?>
+            </option>
+<?php
+ }
+?>
+        </select>
+     
+    </p>
+    <p>Foto <input type="file" name="foto"></p>
+    <p>
+        <button type="submit">Simpan</button>
+        <button type="reset">Batal</button>
+    </p>
+</form>
 </body>
 </html>
