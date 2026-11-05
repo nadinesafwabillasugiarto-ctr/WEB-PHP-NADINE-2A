@@ -25,6 +25,9 @@ $data=mysqli_query($conn,$query);
 <body>
  
 <h1>Data Pengurus</h1>
+<p>
+    <a href="logout.php">Logout</a>
+</p>
 <table border="1">
     <tr>
         <th>ID</th>
