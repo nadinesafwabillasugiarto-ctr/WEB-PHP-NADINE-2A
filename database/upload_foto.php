@@ -45,7 +45,7 @@ $query_pengurus="SELECT * FROM pengurus";
 $data_pengurus=mysqli_query($conn,$query_pengurus);
  while($row_pengurus=mysqli_fetch_assoc($data_pengurus)) {
 ?>
-            <option value="<?php echo $row_pengurus['id_pengurus'];?>">
+            <option value="<?php echo $row_pengurus['id'];?>">
                 <?php echo $row_pengurus['nama']; ?>
             </option>
 <?php
