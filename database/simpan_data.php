@@ -10,8 +10,9 @@ $gender=$_POST['gender'];
 $gaji=$_POST['gaji'];
  
 //memasukan data ke database
-$query="INSERT INTO tb_pengurus VALUES ('$id', '$nama', '$alamat', '$gender', '$gaji')";
+$query="INSERT INTO pengurus (id, nama, alamat, gender, gaji) VALUES ('$id', '$nama', '$alamat', '$gender', '$gaji')";
 $simpan=mysqli_query($conn,$query);
  
 ?>
+
 <a href="tampil_data.php"> Kembali Untuk lihat Data</a>
